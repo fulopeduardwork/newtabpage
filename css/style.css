@@ -1,0 +1,102 @@
+.font
+{
+    font-family: "Segoe Print"
+}
+body
+{
+    background-color: purple; /* if image not found, it uses this purple bg color */
+    background-image: url("/newtabpage/bg.jpg");
+    font-family: "Segoe Print";
+    text-align: center;
+    min-width: 680px;
+}
+    .maxwidth
+    {
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .newtab_title
+    {
+        display: inline-block;
+        min-width: 20%;
+        font-size: 50px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .newtab_title:hover
+    {
+        color: white;
+    }
+    .row_title
+    {
+        padding-top: 40px;
+        font-size: 20px;
+    }
+        .row
+        {
+            background-color: rgba(0, 0, 0, 0.1);
+            border-radius: 50px;
+            vertical-align: middle;
+            font-size: 0px;
+            margin: 6px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .row:hover
+        {
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+        .row-content
+        {
+            display: inline-block;
+            font-size: 15px;
+            padding: 40px;
+            margin: 10px;
+
+        }
+            .row-content:hover
+            {
+                background-color: rgba(0, 0, 0, 0.2);
+                border-radius: 20px;
+                color: white;
+            }
+            .row-icon-size
+            {
+                width: 100px;
+                border-radius: 10px
+            }
+    .youtube
+    {
+        display: none;
+        background-color: rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        font-size: 0px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .youtube:hover
+    {
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+        .videoclip
+        {
+            display: inline-block;
+            margin: 2px 40px;
+            width: 25%;
+        }
+        .javascript_text
+        {
+            color: black;
+            font-size: 40px;
+        }
+        .button_style
+        {
+            font-size: 10px;
+            background-color: rgba(0, 0, 0, 0.1);
+            border-radius: 150px;
+            width: 10%;
+            height: 40px;
+        }
