@@ -2,11 +2,16 @@
 {
     font-family: "Segoe Print"
 }
+#demo:hover
+{
+    position: relative;
+    animation: mymove 400ms infinite;
+}
 body
 {
     background-color: purple; /* if image not found, it uses this purple bg color */
     background-image: url("/newtabpage/bg.jpg");
-    font-family: "Segoe Print";
+    font-family: 'Oleo Script', cursive;
     text-align: center;
     min-width: 680px;
 }
@@ -19,6 +24,7 @@ body
 
     .newtab_title
     {
+        text-align: center;
         display: inline-block;
         min-width: 20%;
         font-size: 50px;
@@ -29,6 +35,31 @@ body
     {
         color: white;
     }
+    .button_div
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .button_style
+    {
+        font-family: 'Oleo Script', cursive;
+        font-size: 20px;
+        background-color: rgba(0, 0, 0, 0.1);
+        border-radius: 150px;
+        width: 250px;
+        height: 60px;
+
+        margin: 0px 20px;
+    }
+    .button_style:hover
+    {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        transition: all 200ms ease;
+        animation: mymove2 200ms linear;
+    }
+
     .row_title
     {
         padding-top: 40px;
@@ -36,46 +67,47 @@ body
     }
         .row
         {
-            background-color: rgba(0, 0, 0, 0.1);
-            border-radius: 50px;
-            vertical-align: middle;
-            font-size: 0px;
-            margin: 6px;
-            margin-right: auto;
-            margin-left: auto;
-        }
-        .row:hover
-        {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
             background-color: rgba(0, 0, 0, 0.2);
+            border-radius: 20px;
+            margin: 20px 0px;
+            animation: myopacity 200ms linear;
         }
+
         .row-content
         {
-            display: inline-block;
-            font-size: 15px;
-            padding: 40px;
-            margin: 10px;
-
+            margin: 40px;
+            font-family: 'Shrikhand', cursive;
         }
             .row-content:hover
             {
                 background-color: rgba(0, 0, 0, 0.2);
-                border-radius: 20px;
+                border-radius: 10px;
                 color: white;
+                transform: scale(1.1);
+                padding: 2px 35px;
+                transition: all 200ms ease;
+                position: relative;
             }
             .row-icon-size
             {
                 width: 100px;
                 border-radius: 10px
+                animation: myopacity 200ms linear;
             }
     .youtube
     {
         display: none;
+        justify-content: center;
         background-color: rgba(0, 0, 0, 0.1);
         border-radius: 20px;
-        font-size: 0px;
+        font-size: 20px;
         width: 100%;
         margin-left: auto;
         margin-right: auto;
+        padding: 20px 0px;
     }
     .youtube:hover
     {
@@ -83,20 +115,15 @@ body
     }
         .videoclip
         {
-            display: inline-block;
+            flex-wrap: wrap;
             margin: 2px 40px;
-            width: 25%;
+            width: 700px;
         }
         .javascript_text
         {
             color: black;
             font-size: 40px;
         }
-        .button_style
-        {
-            font-size: 10px;
-            background-color: rgba(0, 0, 0, 0.1);
-            border-radius: 150px;
-            width: 10%;
-            height: 40px;
-        }
+
+/* font-family: 'Oleo Script', cursive;
+font-family: 'Shrikhand', cursive; */
