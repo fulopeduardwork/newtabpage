@@ -3,34 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>New tab</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="script" href="java/script.js">
-    <style>
-        }
-
-        .row-content {animation-timing-function: linear;}
-
-        @keyframes mymove {
-            0%   {top: 0px;}
-            25%  {top: 1px;}
-            50%  {top: 2px;}
-            75%  {top: 2px;}
-            100% {top: 1px;}
-        }
-        }
-        .row-content {animation-timing-function: linear;}
-
-        @keyframes myopacity {
-            0%   {opacity: 0%;}
-            25%  {opacity: 25%;}
-            50%  {opacity: 50%;}
-            75%  {opacity: 75%;}
-            100% {opacity: 100%;}
-        }
-    </style>
 </head>
 <body>
 <div class="maxwidth">
@@ -38,13 +12,14 @@
         New tab page
     </div>
     <div class="button_div">
-        <button class="button_style" onclick="myFunction2();myFunction3();">Click to hide Most used Websites</button>
-        <button class="button_style" onclick="myFunction();">Click to show Youtube music</button>
+        <button class="button_style" onclick="myFunction2()">Click to hide Most used Websites</button>
+        <button class="button_style" onclick="myFunction()">Click to show Youtube music</button>
     </div>
-    <div id="toggle_2" class="row_title">
-        Most used websites:
-    </div>
-        <div id="toggle_1" class="row">
+        <div id="row" class="row">
+
+            <div id="row" class="row_title">
+                Most used websites:
+            </div>
             <div class="row-content">
                 <div class="row-1-selected">
                     <div class="row-icon">
@@ -115,19 +90,18 @@
     function myFunction() {
         var x = document.getElementById("youtube");
         if (x.style.display === "none") {
-            x.style.display = "flex";
+            x.style.display = "inline-block";
         } else {
             x.style.display = "none";
         }
     }
     function myFunction2() {
-        var x = document.getElementById("toggle_1");
+        var x = document.getElementById("row");
         if (x.style.display === "none") {
-            x.style.display = "flex";
+            x.style.display = "block";
         } else {
             x.style.display = "none";
         }
     }
-
 </script>
 </html>
