@@ -1,78 +1,205 @@
+@media all {
+    .body
+    {
+        min-width: 200px;
+    }
+}
 .font
 {
     font-family: "Segoe Print"
+}
+.demo:hover
+{
+
 }
 body
 {
     background-color: purple; /* if image not found, it uses this purple bg color */
     background-image: url("/newtabpage/bg.jpg");
-    font-family: "Segoe Print";
+    font-family: 'Oleo Script', cursive;
     text-align: center;
-    min-width: 680px;
+    min-width: 280px;
+    margin: 0px;
 }
     .maxwidth
     {
+        background-image: url("/newtabpage/images/bg-tr.png");
+        background-repeat: repeat;
+        background-size: 3000px;
         max-width: 80%;
         margin-left: auto;
         margin-right: auto;
     }
-
-    .newtab_title
+    .navbar
+    {
+     display: flex;
+     font-size: 14px;
+     justify-content: flex-start;
+     background-color: rgba(0, 0, 0, 0.2);
+     border-radius: 150px;
+     margin: 20px;
+    }
+    .newtab_nav
     {
         display: inline-block;
-        min-width: 20%;
-        font-size: 50px;
-        margin-right: auto;
-        margin-left: auto;
-    }
-    .newtab_title:hover
-    {
+        background-color: rgba(0, 0, 0, 0.2);
+        margin: 5px;
+        padding: 10px;
+        font-family: 'Oleo Script', cursive;
+        border-radius: 150px;
+        border: 0px;
         color: white;
     }
-    .row_title
+    .newtab_nav:hover
     {
-        padding-top: 40px;
-        font-size: 20px;
+        background-color: #2d2828;
+        position: relative;
+        animation: mymove 400ms infinite;
     }
+    .newtab_nav_title
+    {
+        display: inline-block;
+        background-color: #095881;
+        margin: 5px;
+        padding: 10px;
+        border: 0px;
+        font-family: 'Oleo Script', cursive;
+
+        border-radius: 150px;
+        color: white;
+    }
+
         .row
         {
-            background-color: rgba(0, 0, 0, 0.1);
-            border-radius: 50px;
-            vertical-align: middle;
-            font-size: 0px;
-            margin: 6px;
-            margin-right: auto;
-            margin-left: auto;
-        }
-        .row:hover
-        {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
             background-color: rgba(0, 0, 0, 0.2);
+            border-radius: 20px;
+            margin: 20px 0px;
+            animation: myopacity 200ms linear;
+            overflow: hidden;
         }
+        .row_title
+        {
+            width: 100%;
+            padding: 10px;
+            font-size: 20px;
+            background-color: rgba(0, 0, 0, 0.2)
+        }
+            .row_subtitle
+            {
+                width: 100%;
+                padding: 10px;
+                font-size: 20px;
+                background-color: rgba(0, 0, 0, 0.01);
+                text-align: center;
+                color: white;
+            }
         .row-content
         {
-            display: inline-block;
-            font-size: 15px;
-            padding: 40px;
-            margin: 10px;
-
+            margin: 40px;
+            font-family: 'Shrikhand', cursive;
         }
             .row-content:hover
             {
                 background-color: rgba(0, 0, 0, 0.2);
-                border-radius: 20px;
+
+                border-radius: 10px;
                 color: white;
+                transform: scale(1.1);
+                padding: 2px 35px;
+                transition: all 200ms ease;
+                position: relative;
             }
             .row-icon-size
             {
                 width: 100px;
                 border-radius: 10px
+                animation: myopacity 200ms linear;
+                margin-top: auto;
+                margin-bottom: auto;
             }
+            .icon-1
+            {
+                background-image: url(/newtabpage/images/gk-off.png);
+                width: 100px;
+                height: 100px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .icon-1:hover
+            {
+                background-image: url(/newtabpage/images/gk-on.png);
+            }
+            .icon-2
+            {
+                background-image: url(/newtabpage/images/maps-off.png);
+                width: 100px;
+                height: 100px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .icon-2:hover
+            {
+                background-image: url(/newtabpage/images/maps-on.png);
+            }
+            .icon-3
+            {
+                background-image: url(/newtabpage/images/ezgif-1-080d6a740b62.gif);
+                width: 100px;
+                height: 100px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .keep_off
+            {
+                background-image: url(/newtabpage/images/gk-off.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 300px;
+            }
+            .keep_off:hover
+            {
+                background-image: url(/newtabpage/images/gk-on.png);
+            }
+            .border
+            {
+                width: 1px;
+                background-color: rgba(0, 0, 0, 0.3);
+                border-right: 2px;
+            }
+            .left_subtitle
+            {
+                text-align: start;
+                padding: 10px;
+                background-color: rgba(0, 0, 0, 0.3);
+                height: 30px;
+            }
+            .websites
+            {
+                display: inline-flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                width: 100%;
+            }
+            .software
+            {
+                display: inline-flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                width: 100%;
+            }
+
     .youtube
     {
+        overflow: hidden;
         display: none;
+        flex-wrap: wrap;
+        justify-content: center;
         background-color: rgba(0, 0, 0, 0.1);
         border-radius: 20px;
-        font-size: 0px;
+        font-size: 20px;
         width: 100%;
         margin-left: auto;
         margin-right: auto;
@@ -84,19 +211,31 @@ body
         .videoclip
         {
             display: inline-block;
-            margin: 2px 40px;
-            width: 25%;
+            margin: 1px;
+            width: 700px;
+            padding: 10px
+        }
+        .videoclip:hover
+        {
+            background-color: rgba(0, 0, 0, 0.3);
         }
         .javascript_text
         {
             color: black;
             font-size: 40px;
         }
-        .button_style
+        .footer
         {
             font-size: 10px;
-            background-color: rgba(0, 0, 0, 0.1);
-            border-radius: 150px;
-            width: 10%;
-            height: 40px;
+            background-color: rgba(0, 0, 0, 0.2);
+            position: fixed;bottom: 0;
+            width: 100%;
+            color: rgba(0, 0, 0, 0.67);
         }
+            .made:hover
+            {
+                color: white;
+            }
+
+/* font-family: 'Oleo Script', cursive;
+font-family: 'Shrikhand', cursive; */
